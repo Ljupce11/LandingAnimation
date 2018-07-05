@@ -1,0 +1,191 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 150%;
+	overflow: hidden;
+	font-family: 'Cinzel', serif;
+}
+
+.spinner{
+    width: 80px;
+    height: 80px;
+    
+    border: 2px solid #f3f3f3;
+    border-top:3px solid #f25a41;
+    border-radius: 100%;
+    
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+    
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+#overlay{
+  height:100%;
+  width:100%;
+  background:rgba(0, 0, 0, 1);
+  position:fixed;
+  left:0;
+  top:0;
+ }
+
+.menu-icon {
+	position: absolute;
+	height: 100%;
+	width: 130px;
+	z-index: 2;
+	font-size: 40px;
+	cursor: pointer
+}
+
+.icon {
+	position: absolute;
+	top: 50px;
+	left: 35px;
+	color: white;
+	cursor: pointer;
+	transition: .7s;
+}
+
+.i1 {
+	z-index: 1;
+}
+
+.i2 {
+	opacity: 0;
+}
+
+.menu {
+	height: 100%;
+	width: 100%;
+	background-color: #181818;
+	z-index: -1;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+	opacity: 0;
+}
+
+h3, h1 {
+	padding: 0px;
+	margin: 0px;
+}
+
+.home {
+	margin: 0 auto 30px auto;
+	text-align: center;
+	cursor: pointer;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	cursor: pointer;
+	bottom: 20px;
+	left: 45%;
+}
+
+.asd {
+	margin-top: 50px;
+	opacity: 0;
+}
+
+.stuff {
+	margin: 0 auto;
+	height: 36px;
+	width: 91px;
+	background: url('http://www.masitupungato.com/asset/images/masi-agricola.png');
+}
+
+.first {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: url('images/header1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: 1s;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.title {
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+	width: 380px;
+	transition: .3s;
+}
+
+.image:hover .title {
+	width: 300px;
+}
+
+h5 {
+	font-style: italic;
+	color: #EAEAEA;
+}
+
+.second {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 100%;
+	background: url('images/header3.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: 1s;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.third {
+	position: absolute;
+	height: 50%;
+	width: 50%;
+	top: 100%;
+	left: 50%;
+	background: url('images/header2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: 1s;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.fourth {
+	position: absolute;
+	height: 50%;
+	width: 50%;
+	top: 150%;
+	left: 50%;
+	background: url('images/header.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: 1s;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
